@@ -24,7 +24,7 @@ export default function Home() {
       email: email,
       password: password
     }
-    const {data} = await axios.post('http://localhost:3000/api/login', datos);
+    const {data} = await axios.post('/api/login', datos);
     
     setName(data[0].nombre);
   }

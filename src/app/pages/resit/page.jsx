@@ -25,7 +25,7 @@ const Resitpage = () => {
         email: email,
         password: password
       }
-      const result = await axios.post('http://localhost:3000/api/users', data);
+      const result = await axios.post('/api/users', data);
       console.log(result);
       rout.push('/');
     }
